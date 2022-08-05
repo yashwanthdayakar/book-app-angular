@@ -1,0 +1,11 @@
+<p>book-status</p>
+<ng-container *ngIf="status" >
+    <span [ngSwitch]="status" >
+        <span *ngSwitchCase="'AVAILABLE'" class="badge rounded-pill text-bg-success">
+            Available            
+        </span>
+        <span *ngSwitchCase="'UNAVAILABLE'" class="badge rounded-pill text-bg-danger">
+            Out of Stock
+        </span>
+</span>
+</ng-container>
